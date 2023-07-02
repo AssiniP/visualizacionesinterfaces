@@ -5,23 +5,92 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Inicio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
+    <link rel="stylesheet" href="css/general.css">
 </head>
 
 <body>
-    <header>
-        <nav class="navegador"></nav>
+    <header class="w-full h-[85px] bg-sky-400 flex justify-center">
+        <a href="#" class="m-auto h-[75px]"><img src="img/miargentina-logo 1.png" alt="MiArgentina-Logo"></a>
     </header>
     <main>
         <section>
-            <article class="contenedor-principal"></article>
+            <article class="mt-[70px] text-center">
+                <h1 class="text-4xl text-black font-bold mb-[30px]">¿Qué es Mi Argentina?</h1>
+                <div class="text-center text-black text-[20px] font-bold w-[50%] m-auto">Una forma fácil y segura
+                    de acceder a
+                    los servicios digitales del Estado con una única sesión y en un sólo lugar.</div>
+            </article>
         </section>
         <section>
-            <article class="calendario"></article>
+            <div class="w-full mt-6 flex md:flex-row flex-col justify-center items-center">
+                <div class="text-center flex flex-col justify-center items-center">
+                    <img class="w-[150px] h-[166px]" src="img/illus_miscredenciales.png" />
+                    <p class="text-lg font-bold">Mis
+                        documentos</p>
+                    <div class="text-sm font-normal w-[220px] m-3 text-center">La Constancia de
+                        Cuil, el DNI digital,
+                        la Licencia
+                        de
+                        Nacional de
+                        Conducir, la Credencial de
+                        Trasplantado y
+                        la de Donación de Órganos disponibles en el teléfono.</div>
+                </div>
+                <div class="text-center flex flex-col  justify-center items-center">
+                    <img class="w-[150px] h-[166px]" src="img/ilus_misnotificaciones.png" />
+                    <p class="text-lg font-bold">Mis notificaciones</p>
+                    <div class="text-sm font-normal w-[200px] m-3 text-center">Nosotros te recordamos fechas de cobro,
+                        vencimientos de credenciales,
+                        turnos y más.Configurá tus
+                        avisos y
+                        despreocupate.</div>
+
+                </div>
+                <div class="text-center flex flex-col  justify-center items-center">
+                    <img class="w-[150px] h-[166px]" src="img/ilus_perfilconductor.png" />
+                    <p class="text-lg font-bold">Mis vehículos</p>
+                    <div class="text-sm font-normal w-[200px] m-3 text-center">Accedé a tu Licencia Nacional de
+                        Conducir, la Cédula verde o azul, el
+                        seguro y
+                        los datos de
+                        radicación y patente
+                        del vehículo.</div>
+                </div>
+            </div>
+            <div class="mt-20 flex md:flex-row flex-col gap-10 justify-center items-center">
+                <div class="w-[200px] h-[45px] ">
+                    <a href="#">
+                        <button
+                            class="w-[200px] h-[45px] bg-blue-950 rounded-2xl text-white text-[16px] font-bold p-2">Ver
+                            servicios </button></a>
+
+                </div>
+                <div class="w-[200px] h-[45px]">
+                    <a href="#">
+                        <button class="w-[200px] h-[45px] bg-lime-700 rounded-2xl text-white font-bold p-2"> Ingresa
+                            a
+                            tú cuenta</button></a>
+                </div>
+
+            </div>
         </section>
     </main>
-    <footer>
-        <div class="redes"></div>
-        <div class="generales"></div>
+    <footer class="flex flex-row gap-5 justify-center items-center  bg-sky-400 w-full">
+        <div class="flex flex-row gap-2 m-5">
+            <a href="#" class="sm:block hidden">Términos y condiciones
+            </a>
+            <a href="#"><img class="md:w-6 md:h-6 w-[25px] h-[25px]" src="img/icons/document.png" /></a>
+        </div>
+        <div class="flex flex-row gap-2 m-5">
+            <a href="#" class="sm:block hidden">Mesa de ayuda</a>
+            <a href="#"><img class="w-6 h-6" src="img/icons/Users.png"></a>
+        </div>
+        <div class="flex flex-row gap-2 m-5">
+            <a href="#" class="sm:block hidden">Preguntas frecuentes</a>
+            <a href="#"><img class="w-6 h-5" src="img/icons/🦆 icon _message question_ (1).svg" /></a>
+        </div>
     </footer>
 </body>
 
