@@ -5,23 +5,288 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Inicio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
+    <link rel="stylesheet" href="css/general.css">
 </head>
 
-<body>
-    <header>
-        <nav class="navegador"></nav>
+<body class="">
+    <header class="w-full flex flex-row h-[85px] px-4 bg-sky-400 justify-between">
+        <div class="flex flex-row flex-col lg:flex-row gap-2 items-center">
+            <a href="#" class="m-auto h-[75px] px-2 pr-10"><img src="img/miargentina-logo 1.png" alt="MiArgentina-Logo" class="object-scale-down"></a>
+            <a href="#" class="text-white text-[12px] font-bold">Documentos</a>
+            <a href="#" class="text-white text-[12px] font-bold">Vehículos</a>
+            <a href="#" class="text-white text-[12px] font-bold">Trabajo</a>
+            <a href="#" class="text-white text-[12px] font-bold">Salud</a>
+            <a href="#" class="text-white text-[12px] font-bold">Cobros</a>
+            <a href="#" class="text-white text-[12px] font-bold">Turnos</a>
+            <a href="#" class="text-white text-[12px] font-bold">Trámites</a>
+        </div>
+        <div class="flex flex-row flex-col lg:flex-row gap-2 items-center" >
+            <img class="w-7 h-7" src="img/icons/circle-user-solid.svg" alt="usuario">
+            <p class="text-white text-[12px] font-bold">Nara Esther Humano</p>
+            <img class="w-6 h-5" src="img/icons/chevron-down-solid.svg" alt="ver mas">
+        </div>
     </header>
-    <main>
-        <section>
-            <article class="contenedor-principal"></article>
-        </section>
-        <section>
-            <article class="calendario"></article>
-        </section>
-    </main>
-    <footer>
-        <div class="redes"></div>
-        <div class="generales"></div>
+    
+    
+    <div class="w-[1300px] h-[350px] flex items-center justify-between p-2 mt-10 bg-[url('https://via.placeholder.com/1300x350')]">
+        <img class="w-9 h-7" src="img/icons/circle-arrow-left-solid.svg" alt="ver imagen">
+        <div class="flex flex-col h-full relative place-content-center">
+            <div class="py-2 flew justify-center">
+                <h1 class="w-[160px] h-[30px] text-white text-[24px] font-bold my-2">Mi Argentina</h1>
+                <p class="w-[775px] text-white text-[16px] font-bold">Tu perfil digital ciudadano para gestionar trámites, sacar turnos, acceder a tus credenciales y recibir información personalizada.</p>
+            </div>
+            <div class="flex flex-row m-2 justify-center absolute bottom-0 inset-x-0">
+                <img src="img/icons/circle-stop-solid.svg" class="w-9 h-7"alt="">
+                <img src="img/icons/circle-stop-regular.svg" class="w-9 h-7" alt="">
+                <img src="img/icons/circle-stop-regular.svg"  class="w-9 h-7"alt="">
+            </div>
+        </div>
+        <img class="w-9 h-7" src="img/icons/circle-arrow-right-solid.svg" alt="ver imagen">
+    </div>
+    
+    <!--CALENDARIOO-->
+    <div class="h-[400px] flex flex-row items-center gap-3">
+        <div class="w-[460px] h-[280px] flex-col justify-start items-center inline-flex">
+            <div class="self-stretch pb-1 justify-center items-start inline-flex">
+                <div class="w-[70px] px-2 py-0.5 bg-black rounded justify-center items-center flex">
+                    <div class="text-center text-white text-[11px] font-normal">Julio 2023</div>
+                </div>
+            </div>
+            <div class="self-stretch grow shrink basis-0 flex-col justify-between items-center flex">
+                <div class="self-stretch justify-between items-center inline-flex">
+                    <div class="w-[22px] h-[22px] rounded justify-center items-center flex">
+                        <div class="text-center text-white text-[11px] font-extralight">07</div>
+                    </div>
+                    <div class="w-[22px] h-[22px] rounded justify-center items-center flex">
+                        <div class="text-center text-zinc-400 text-[11px] font-normal">Lu</div>
+                    </div>
+                    <div class="w-[22px] h-[22px] rounded justify-center items-center flex">
+                        <div class="text-center text-zinc-400 text-[11px] font-normal">Ma</div>
+                    </div>
+                    <div class="w-[22px] h-[22px] rounded justify-center items-center flex">
+                        <div class="text-center text-zinc-400 text-[11px] font-normal">Mi</div>
+                    </div>
+                    <div class="w-[22px] h-[22px] rounded justify-center items-center flex">
+                        <div class="text-center text-zinc-400 text-[11px] font-normal">Ju</div>
+                    </div>
+                    <div class="w-[22px] h-[22px] rounded justify-center items-center flex">
+                        <div class="text-center text-zinc-400 text-[11px] font-normal">Vi</div>
+                    </div>
+                    <div class="w-[22px] h-[22px] rounded justify-center items-center flex">
+                        <div class="text-center text-sky-500 text-[11px] font-normal">Sá</div>
+                    </div>
+                    <div class="w-[22px] h-[22px] rounded justify-center items-center flex">
+                        <div class="text-center text-sky-500 text-[11px] font-normal">Do</div>
+                    </div>
+                </div>
+                <div class="self-stretch justify-between items-center inline-flex">
+                    <div class="w-[22px] h-[22px] bg-zinc-800 rounded justify-center items-center flex">
+                        <div class="text-center text-white text-[11px] font-extralight">26</div>
+                    </div>
+                    <div class="w-[22px] h-[22px] rounded justify-center items-center flex">
+                        <div class="text-center text-zinc-600 text-[11px] font-normal">26</div>
+                    </div>
+                    <div class="w-[22px] h-[22px] rounded justify-center items-center flex">
+                        <div class="text-center text-zinc-600 text-[11px] font-normal">27</div>
+                    </div>
+                    <div class="w-[22px] h-[22px] rounded justify-center items-center flex">
+                        <div class="text-center text-zinc-600 text-[11px] font-normal">28</div>
+                    </div>
+                    <div class="w-[22px] h-[22px] rounded justify-center items-center flex">
+                        <div class="text-center text-zinc-600 text-[11px] font-normal">29</div>
+                    </div>
+                    <div class="w-[22px] h-[22px] rounded justify-center items-center flex">
+                        <div class="text-center text-zinc-600 text-[11px] font-normal">30</div>
+                    </div>
+                    <div class="w-[22px] h-[22px] bg-sky-500 rounded justify-center items-center flex">
+                        <div class="text-center text-white text-[11px] font-normal">1</div>
+                    </div>
+                    <div class="w-[22px] h-[22px] rounded justify-center items-center flex">
+                        <div class="text-center text-sky-500 text-[11px] font-normal">2</div>
+                    </div>
+                </div>
+                <div class="self-stretch justify-between items-center inline-flex">
+                    <div class="w-[22px] h-[22px] bg-zinc-800 rounded justify-center items-center flex">
+                        <div class="text-center text-zinc-400 text-[11px] font-extralight">27</div>
+                    </div>
+                    <div class="w-[22px] h-[22px] rounded justify-center items-center flex">
+                        <div class="text-center text-zinc-400 text-[11px] font-normal">3</div>
+                    </div>
+                    <div class="w-[22px] h-[22px] rounded justify-center items-center flex">
+                        <div class="text-center text-zinc-400 text-[11px] font-normal">4</div>
+                    </div>
+                    <div class="w-[22px] h-[22px] bg-orange-500 rounded justify-center items-center flex">
+                        <div class="text-center text-white text-[11px] font-normal">5</div>
+                    </div>
+                    <div class="w-[22px] h-[22px] rounded justify-center items-center flex">
+                        <div class="text-center text-zinc-400 text-[11px] font-normal">6</div>
+                    </div>
+                    <div class="w-[22px] h-[22px] bg-orange-500 rounded justify-center items-center flex">
+                        <div class="text-center text-white text-[11px] font-normal">7</div>
+                    </div>
+                    <div class="w-[22px] h-[22px] rounded justify-center items-center flex">
+                        <div class="text-center text-sky-500 text-[11px] font-normal">8</div>
+                    </div>
+                    <div class="w-[22px] h-[22px] bg-lime-700 rounded justify-center items-center flex">
+                        <div class="text-center text-white text-[11px] font-normal">9</div>
+                    </div>
+                </div>
+                <div class="self-stretch justify-between items-center inline-flex">
+                    <div class="w-[22px] h-[22px] bg-zinc-800 rounded justify-center items-center flex">
+                        <div class="text-center text-zinc-400 text-[11px] font-extralight">28</div>
+                    </div>
+                    <div class="w-[22px] h-[22px] rounded justify-center items-center flex">
+                        <div class="text-center text-zinc-400 text-[11px] font-normal">10</div>
+                    </div>
+                    <div class="w-[22px] h-[22px] rounded justify-center items-center flex">
+                        <div class="text-center text-zinc-400 text-[11px] font-normal">11</div>
+                    </div>
+                    <div class="w-[22px] h-[22px] rounded justify-center items-center flex">
+                        <div class="text-center text-zinc-400 text-[11px] font-normal">12</div>
+                    </div>
+                    <div class="w-[22px] h-[22px] rounded justify-center items-center flex">
+                        <div class="text-center text-zinc-400 text-[11px] font-normal">13</div>
+                    </div>
+                    <div class="w-[22px] h-[22px] rounded justify-center items-center flex">
+                        <div class="text-center text-zinc-400 text-[11px] font-normal">14</div>
+                    </div>
+                    <div class="w-[22px] h-[22px] rounded justify-center items-center flex">
+                        <div class="text-center text-sky-500 text-[11px] font-normal">15</div>
+                    </div>
+                    <div class="w-[22px] h-[22px] rounded justify-center items-center flex">
+                        <div class="text-center text-sky-500 text-[11px] font-normal">16</div>
+                    </div>
+                </div>
+                <div class="self-stretch justify-between items-center inline-flex">
+                    <div class="w-[22px] h-[22px] bg-zinc-800 rounded justify-center items-center flex">
+                        <div class="text-center text-zinc-400 text-[11px] font-extralight">29</div>
+                    </div>
+                    <div class="w-[22px] h-[22px] rounded justify-center items-center flex">
+                        <div class="text-center text-zinc-400 text-[11px] font-normal">17</div>
+                    </div>
+                    <div class="w-[22px] h-[22px] rounded justify-center items-center flex">
+                        <div class="text-center text-zinc-400 text-[11px] font-normal">18</div>
+                    </div>
+                    <div class="w-[22px] h-[22px] rounded justify-center items-center flex">
+                        <div class="text-center text-zinc-400 text-[11px] font-normal">19</div>
+                    </div>
+                    <div class="w-[22px] h-[22px] rounded justify-center items-center flex">
+                        <div class="text-center text-zinc-400 text-[11px] font-normal">20</div>
+                    </div>
+                    <div class="w-[22px] h-[22px] rounded justify-center items-center flex">
+                        <div class="text-center text-zinc-400 text-[11px] font-normal">21</div>
+                    </div>
+                    <div class="w-[22px] h-[22px] rounded justify-center items-center flex">
+                        <div class="text-center text-sky-500 text-[11px] font-normal">22</div>
+                    </div>
+                    <div class="w-[22px] h-[22px] rounded justify-center items-center flex">
+                        <div class="text-center text-sky-500 text-[11px] font-normal">23</div>
+                    </div>
+                </div>
+                <div class="self-stretch justify-between items-center inline-flex">
+                    <div class="w-[22px] h-[22px] bg-zinc-800 rounded justify-center items-center flex">
+                        <div class="text-center text-zinc-400 text-[11px] font-extralight">30</div>
+                    </div>
+                    <div class="w-[22px] h-[22px] rounded justify-center items-center flex">
+                        <div class="text-center text-zinc-400 text-[11px] font-normal">24</div>
+                    </div>
+                    <div class="w-[22px] h-[22px] rounded justify-center items-center flex">
+                        <div class="text-center text-zinc-400 text-[11px] font-normal">25</div>
+                    </div>
+                    <div class="w-[22px] h-[22px] rounded justify-center items-center flex">
+                        <div class="text-center text-zinc-400 text-[11px] font-normal">26</div>
+                    </div>
+                    <div class="w-[22px] h-[22px] rounded justify-center items-center flex">
+                        <div class="text-center text-zinc-400 text-[11px] font-normal">27</div>
+                    </div>
+                    <div class="w-[22px] h-[22px] rounded justify-center items-center flex">
+                        <div class="text-center text-zinc-400 text-[11px] font-normal">28</div>
+                    </div>
+                    <div class="w-[22px] h-[22px] rounded justify-center items-center flex">
+                        <div class="text-center text-sky-500 text-[11px] font-normal">29</div>
+                    </div>
+                    <div class="w-[22px] h-[22px] rounded justify-center items-center flex">
+                        <div class="text-center text-sky-500 text-[11px] font-normal">30</div>
+                    </div>
+                </div>
+                <div class="self-stretch justify-between items-center inline-flex">
+                    <div class="w-[22px] h-[22px] bg-zinc-800 rounded justify-center items-center flex">
+                        <div class="text-center text-zinc-400 text-[11px] font-extralight">31</div>
+                    </div>
+                    <div class="w-[22px] h-[22px] rounded justify-center items-center flex">
+                        <div class="text-center text-zinc-400 text-[11px] font-normal">31</div>
+                    </div>
+                    <div class="w-[22px] h-[22px] rounded justify-center items-center flex">
+                        <div class="text-center text-zinc-600 text-[11px] font-normal">1</div>
+                    </div>
+                    <div class="w-[22px] h-[22px] rounded justify-center items-center flex">
+                        <div class="text-center text-zinc-600 text-[11px] font-normal">2</div>
+                    </div>
+                    <div class="w-[22px] h-[22px] rounded justify-center items-center flex">
+                        <div class="text-center text-zinc-600 text-[11px] font-normal">3</div>
+                    </div>
+                    <div class="w-[22px] h-[22px] rounded justify-center items-center flex">
+                        <div class="text-center text-zinc-600 text-[11px] font-normal">4</div>
+                    </div>
+                    <div class="w-[22px] h-[22px] rounded justify-center items-center flex">
+                        <div class="text-center text-sky-700 text-[11px] font-normal">5</div>
+                    </div>
+                    <div class="w-[22px] h-[22px] rounded justify-center items-center flex">
+                        <div class="text-center text-sky-700 text-[11px] font-normal">6</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="w-[200px] h-[280px] flex flex-col flex-1 relative justify-between items-center">
+            <div class="w-[200px] h-[105px] flex flex-col relative">
+                <div class="w-4 h-[15px] left-[14px] top-[11px] absolute bg-lime-700"></div>
+                <div class="w-4 h-[15px] left-[14px] top-[45px] absolute bg-orange-500"></div>
+                <div class="w-4 h-[15px] left-[14px] top-[79px] absolute bg-sky-500"></div>
+                <div class="left-[47px] top-[11px] absolute text-center text-black text-[11px] font-normal">Feriado</div>
+                <div class="left-[47px] top-[45px] absolute text-center text-black text-[11px] font-normal">Turno</div>
+                <div class="left-[47px] top-[79px] absolute text-center text-black text-[11px] font-normal">Día Actual</div>
+            </div>
+            <div class="w-[200px] h-[120px] flex flex-col relative">
+                <div class="left-[14px] top-[2px] absolute text-center text-black text-[13px] font-bold">Próximos trámites</div>
+                <div class="w-4 h-[15px] left-[14px] top-[31px] absolute bg-lime-700"></div>
+                <div class="w-4 h-[15px] left-[14px] top-[31px] absolute text-center text-white text-[11px] font-normal">9</div> 
+                <div class="w-4 h-[15px] left-[14px] top-[65px] absolute bg-orange-500"></div>
+                <div class="w-4 h-[15px] left-[14px] top-[65px] absolute text-center text-white text-[11px] font-normal">5</div> 
+                <div class="w-4 h-[15px] left-[14px] top-[99px] absolute bg-orange-500"></div>
+                <div class="w-4 h-[15px] left-[14px] top-[99px] absolute text-center text-white text-[11px] font-normal">7</div> 
+                <div class="left-[47px] top-[99px] absolute text-center text-black text-[11px] font-normal">Pasaporte exprés</div>
+                <div class="left-[47px] top-[31px] absolute text-center text-black text-[11px] font-normal">Dia de la independencia</div>
+                <div class="left-[47px] top-[65px] absolute text-center text-black text-[11px] font-normal">DNI renovación</div>
+            </div>
+        </div>
+        
+    </div>
+    
+    <!--Fin del calendario-->
+    
+
+    <footer class="flex flex-row justify-between items-center bg-sky-400 w-full">
+        <div class="flex flex-row gap-2 p-4">
+            <a href="#"><img src="https://via.placeholder.com/24x20" alt="whatsapp"></a>
+            <a href="#"><img src="https://via.placeholder.com/24x20" alt="facebook"></a>
+            <a href="#"><img src="https://via.placeholder.com/24x20" alt="instagram"></a>
+        </div>
+        <div class="flex flew-row gap-2">
+            <div class="flex flex-row gap-2 m-2">
+                <a href="#" class="sm:block hidden font-bold">Preguntas frecuentes</a>
+                <a href="#"><img class="w-6 h-5" src="img/icons/🦆 icon _message question_ (1).svg" /></a>
+            </div>
+            <div class="flex flex-row gap-2 m-2">
+                <a href="#" class="sm:block hidden font-bold">Mesa de ayuda</a>
+                <a href="#"><img class="w-6 h-6" src="img/icons/Users.png"></a>
+            </div>
+            <div class="flex flex-row gap-2 m-2">
+                <a href="#" class="sm:block hidden font-bold">Términos y condiciones</a>
+                <a href="#"><img class="md:w-6 md:h-6 w-[25px] h-[25px]" src="img/icons/document.png" /></a>
+            </div>
+        </div>
     </footer>
 </body>
 
